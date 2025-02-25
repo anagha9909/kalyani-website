@@ -1,0 +1,621 @@
+body {
+    background-color: #fff;
+    color:#000;
+    margin: 0;
+    font-family: "Roboto Serif", serif;
+}
+p {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 0;
+}
+img {
+    width: 100%;
+    height:auto;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.section-class {
+    padding: 48px 48px;
+}
+.section-container {
+    max-width: 1300px;
+    padding: 48px 0px ;
+    margin: 0 auto;
+}
+/*Header styles*/
+#mobile-menu-toggle {
+    display: none;
+}
+#masthead {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 24px 0px;
+    gap:18px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+.main-navigation ul {
+    display: flex;
+    margin: 0;
+    gap: 48px;
+}
+.menu-item a {
+    color: #281B1B;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Public Sans';
+    padding: 20px 0px;
+}
+/*home page styles*/
+.hero-section, .about-page-section, .food-gallery-section, .contact-page-hero-section {
+    margin-top: 99px;
+}
+.hero-image {
+    border-radius: 25px;
+}
+ /* owl dots styles */
+ .hero-carousel .owl-dot span {
+    width: 10px;
+    height: 10px;
+    background-color: #999898; 
+    border-radius: 50%;
+    display: inline-block; 
+}
+
+.hero-carousel .owl-dot.active span {
+    background-color: #CA272C; 
+}
+.hero-carousel .owl-dot {
+    margin: 5px;
+}
+.hero-carousel .owl-dots {
+    text-align: center; 
+    position: absolute;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: auto; 
+    z-index: 100; 
+}
+.owl-nav {
+    display: flex !important;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+
+ /* Hide the previous button */
+ .custom-prev {
+    background: url('media/herocarouselprev.png') !important; 
+    background-repeat: no-repeat !important;
+    background-size: contain !important; 
+    width: 30px !important; 
+    height: 30px !important; 
+    position: absolute !important;
+    left: 06px !important; 
+    top: 42% !important;
+    transform: translateY(-50%) !important;
+}
+/* Custom next button */
+.custom-next {
+    background: url('media/herocarouselNext.png') !important; 
+    background-repeat: no-repeat !important;
+    background-size: contain !important; 
+    width: 30px !important; 
+    height: 30px !important; 
+    position: absolute !important;
+    right: 06px !important; 
+    top: 42% !important;
+    transform: translateY(-50%) !important;
+}
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+}
+.culinary-heritage-title {
+    font-size: 90px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+    padding: 0px 90px;
+}
+.heritage-image-wrapper {
+    padding-top: 40px;
+}
+.words-of-chef {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    padding-bottom: 40px;
+}
+.chef-name-wrapper {
+    width: 25%;
+    margin: 0 auto;
+}
+.designation-of-chef {
+    font-size: 14px;
+    color: #2E14159E;
+}
+.our-specialities-container {
+    display: flex;
+    justify-content: space-between;
+}
+.our-specialities-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1;
+    color: #281B1B;
+}
+.section-content {
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: left;
+}
+.primary-button-wrapper {
+    margin-top: 20px;
+}
+.primary-button, .contact-form .submit-btn, .reservation-form .submit-btn {
+    padding: 12px 24px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    background: #981D21;
+    color: #FEFBFB;
+    border-radius: 8px;
+}
+.meet-our-chef-wrapper {
+    gap: 85px;
+}
+.explore-menu-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+.explore-menu-card {
+    padding: 16px 16px 0px 16px;
+    background: #7E252817;
+    border-radius: 16px;
+}
+.home-food-category {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+}
+.explore-menu-item-wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: -4px;
+}
+/*footer styles*/
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social-media-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.subscription-wrapper {
+    margin-top: 40px;
+}
+.footer-content {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2;
+    text-align: center;
+}
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.subscription-form input#email {
+    padding: 12px 12px;
+    border: 1.5px solid #00000000;
+    background: #7E252817;
+    border-radius: 8px;
+    width: 280px;
+}
+.subscription-form .primary-button {
+    padding: 8px 16px;
+    border: none;
+    font-size: 18px;
+}
+.footer-address-wrapper {
+    margin-top: 40px;
+}
+.footer-address, .footer-location {
+    line-height: 1.2;
+    font-size: 16px;
+}
+.site-info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.CESLink {
+    color: #000;
+}
+/*menu page styles*/
+.menu-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.food-menu-card {
+    max-width: 60%;
+    margin: 0 auto;
+}
+/*about page styles*/
+.about-page-section .section-container {
+    padding-bottom: 0px;
+}
+.about-page-section .welcome-image {
+    margin-top: -10px;
+}
+.food-images-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.gallery-image:nth-child(1) {
+    width: 100%;
+}
+.gallery-image:nth-child(2) {
+    width: 70%;
+    display: flex;
+    align-self: end;
+}
+.food-images-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+.reviews-section .section-title {
+    text-align: center;
+}
+.reviews-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+.reviewer-info-wrapper {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.review-card {
+    background: #E0BFB81F;
+    padding: 32px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+}
+.reviewer-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 0.5;
+    text-align: left;
+}
+.reviewer-details {
+    font-size: 16px;
+    color: #EBD5D19E;
+    text-align: left;
+}
+.review-content {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #281B1B;
+    text-align: left;
+    padding: 0 25px;
+    border-left: 1.5px solid #B6979133;
+    margin-left: 20px;
+}
+.reviews-wrapper .custom-prev {
+    display: none;
+}
+.reviews-wrapper .custom-next {
+    display: none;
+}
+.reviews-wrapper .owl-prev, .reviews-wrapper .owl-next {
+    display: none;
+}
+/*contact page styles*/
+.contact-page-hero-wrapper {
+    display: flex;
+}
+.contact-page-title {
+    width: 40%;
+    text-align: left;
+    padding-left: 0;
+    padding-top: 80px;
+}
+.contact-form-section-wrapper {
+    width: 60%;
+}
+.contact-info-title {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+}
+.contact-info-content {
+    line-height: 1.4;
+    padding: 0 68px;
+}
+.contact-form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.contact-form-row {
+    display: flex;
+    gap: 15px;
+}
+.input-field-wrapper {
+    margin-bottom: 15px;
+}
+.contact-form input, .contact-form textarea, .reservation-form input, .reservation-form textarea {
+    padding: 12px 26px;
+    background: #72423117;
+    border-radius: 16px;
+    border: none;
+    padding-left: 12px;
+    font-family: 'Public Sans';
+    color: #2E1B1466;
+    font-size: 14px;
+}
+.contact-form input[type="text"], .reservation-form input[type="text"] {
+    width: 240px;
+}
+.contact-form input[type="email"], .contact-form textarea, .reservation-form input[type="email"], .reservation-form textarea {
+    width: 532px;
+}
+.contact-form .submit-btn {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 16px;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+}
+.reservations-section {
+    position: relative;
+    z-index: 2;
+}
+.reservations-section::before {
+    content: "";
+    position: absolute;
+    bottom: 22%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #701E0029 0%, rgba(254, 252, 251, 0.8) 30%, rgba(254, 252, 251, 0.5) 60%, rgba(254, 252, 251, 0) 100%);
+    padding: 80px 0;
+    z-index: -1;
+}
+.reservations-title {
+    line-height: 2;
+}
+.reservation-form {
+    padding-bottom: 100px;
+}
+.reservation-form .submit-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.reservation-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding-bottom: 40px;
+}
+.reservation-button {
+    font-size: 14px;
+    border-radius: 16px;
+}
+.reservation-form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 22px 60px;
+    border: 2px solid #6E534933;
+    border-radius: 16px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 65px;
+    background: #fff;
+    box-shadow:  
+    0px 12px 27px 0px #00000008,  
+    0px 50px 50px 0px #00000008,  
+    0px 112px 67px 0px #00000005,  
+    0px 199px 80px 0px #00000000,  
+    0px 311px 87px 0px #00000000;
+}
+/*moile responsive styles*/
+@media (max-width: 1023px) {
+    #mobile-menu-toggle {
+        display: block;
+        border: none;
+        background: none;
+        font-size: 20px;
+        position: absolute;
+        right: 5px;
+        top: 30px;
+    }
+    #masthead {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+     .main-navigation ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: white;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        height: 100vh;
+    }
+    .main-navigation.toggled ul {
+        display: flex;
+    }
+    
+    .section-class {
+        padding: 0 48px;
+    }
+    .section-title {
+        font-size: 25px;
+        text-align: center;
+    }
+    .section-content {
+        font-size: 16px;
+        text-align: center;
+    }
+    .primary-button-wrapper {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-section {
+        margin-top: 50px;
+    }
+    .explore-menu-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 15px;
+    }
+    .culinary-heritage-title {
+        font-size: 25px;
+        padding: 0px;
+    }
+    .words-of-chef {
+        width: 100%;
+        font-size: 18px;
+    }
+    .chef-name-wrapper {
+        width: 100%;
+    }
+    .our-specialities-container {
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .our-specialities-contents {
+        order: 2;
+    }
+    /*footer styles*/
+    .footer-content {
+        font-size: 16px;
+    }
+    .subscription-form {
+        flex-direction: column;
+    }
+    .footer-address, .footer-location {
+        line-height: 0.2;
+        font-size: 14px;
+    }
+    .site-info-wrapper {
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+    }
+    .copy-right::after {
+       display: none;
+    }
+    .ces-link {
+        color: #000;
+    }
+    /*about page responsive styles*/
+    .about-page-section .welcome-image {
+        margin-top: 0;
+    }
+    .contact-page-hero-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-page-title {
+        width: 100%;
+        text-align: center;
+        padding-top: 0px;
+    }
+    .contact-form-section-wrapper {
+        width: 100%;
+    }
+    .contact-form-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    .contact-info-title {
+        font-size: 23px;
+    }
+    .contact-info-content {
+        line-height: 1.2;
+        padding: 0px;
+    }
+    .contact-form input[type="email"], .contact-form textarea, .reservation-form input[type="email"], .reservation-form textarea {
+        width: 240px;
+    }
+    .reservations-title {
+        line-height: 1.2;
+    }
+    .reservation-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+        padding-bottom: 5px;
+    }
+    .reservation-logo-wrapper {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .reservation-button {
+        font-size: 8px;
+    }
+
+}
+
